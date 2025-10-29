@@ -4,7 +4,7 @@ import { AnimalComponent } from './components/animal-component/animal-component'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,AnimalComponent ],
+  imports: [RouterOutlet ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -14,8 +14,17 @@ export class AnimalService {
     'application/json');
 
 getAllAnimalsData(): Observable<any> {
+  console.log("Fetching all animals service...");
 return this.http.get<any>(this.apiUri)
 }
+newAnimal(data: any): Observable<any> {
+return this.http.post<any>(
+this.apiUri,
+data,
+{headers: this.httpOptions});
+}
+
 
   }
+  
 
